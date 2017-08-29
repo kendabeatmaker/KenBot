@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KenBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAk-zK-mol">
+                                <rect key="frame" x="0.0" y="79" width="375" height="516"/>
+                                <color key="backgroundColor" red="0.86263877153396606" green="0.86272627115249634" blue="0.86672365665435791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Some Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkx-9v-P9W">
+                                <rect key="frame" x="16" y="26" width="105" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nUT-Xb-uFW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type message here" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-1C-kyj">
+                                <rect key="frame" x="16" y="609" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.77263534069061279" green="0.76450163125991821" blue="0.77676504850387573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xfp-t2-PcH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="bNu-pi-6sP"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot-peeking" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-Xa-Lgj">
+                                <rect key="frame" x="168" y="446" width="191" height="142"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.092232026159763336" green="0.4968794584274292" blue="0.60160553455352783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UAk-zK-mol" firstAttribute="centerX" secondItem="EaN-1C-kyj" secondAttribute="centerX" id="2JX-HL-OIS"/>
+                            <constraint firstItem="UAk-zK-mol" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PM4-1x-RzC"/>
+                            <constraint firstItem="UAk-zK-mol" firstAttribute="top" secondItem="dkx-9v-P9W" secondAttribute="bottom" id="Wxn-AB-gvb"/>
+                            <constraint firstItem="xSh-Xa-Lgj" firstAttribute="trailing" secondItem="EaN-1C-kyj" secondAttribute="trailing" id="gEj-0D-NHu"/>
+                            <constraint firstItem="EaN-1C-kyj" firstAttribute="top" secondItem="UAk-zK-mol" secondAttribute="bottom" constant="14" id="gRE-62-eTt"/>
+                            <constraint firstAttribute="trailing" secondItem="UAk-zK-mol" secondAttribute="trailing" id="iYr-Dl-oZX"/>
+                            <constraint firstItem="xSh-Xa-Lgj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="426" id="k3g-M4-av3"/>
+                            <constraint firstItem="dkx-9v-P9W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nEv-dQ-9AQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EaN-1C-kyj" secondAttribute="bottom" constant="28" id="qrb-SQ-AMm"/>
+                            <constraint firstItem="EaN-1C-kyj" firstAttribute="top" secondItem="xSh-Xa-Lgj" secondAttribute="bottom" constant="21" id="rz6-OK-AzQ"/>
+                            <constraint firstItem="dkx-9v-P9W" firstAttribute="leading" secondItem="EaN-1C-kyj" secondAttribute="leading" id="xM2-c1-B4N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkx-9v-P9W" secondAttribute="trailing" constant="254" id="xyW-2i-i7e"/>
+                            <constraint firstItem="dkx-9v-P9W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="yNQ-K5-2ha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BotAnswerWindow" destination="UAk-zK-mol" id="pOy-GP-hL6"/>
+                        <outlet property="BotGreeting" destination="dkx-9v-P9W" id="Nqk-Nd-cuo"/>
+                        <outlet property="HumanInput" destination="EaN-1C-kyj" id="AYP-tn-F8m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="robot-peeking" width="191" height="156"/>
+    </resources>
+</document>
